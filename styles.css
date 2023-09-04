@@ -62,19 +62,16 @@ ellipse {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-
 }
 
 .hotspot-btn.active {
     background-color: #e74c3c;
     color: #fff;
-
 }
 
 .hotspot-btn.active:hover {
     background-color: #9d291c;
     color: #fff;
-
 }
 
 
@@ -99,12 +96,10 @@ ellipse {
 
 #bodyImg {
     height: 80vh;
-    width: 15vw;
 }
 
 #svgBody {
     height: 80vh;
-    width: 19vw;
 }
 
 /* Define styles for the first ellipse within #body-hotspot */
