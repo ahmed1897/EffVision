@@ -1,0 +1,241 @@
+/* Reset styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(24, 24, 24);
+    position: relative;
+}
+
+/* Define styles for ellipses */
+ellipse {
+    cursor: pointer;
+}
+
+/* Define styles for the image container */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    width: 100vh;
+    height: 100vh;
+    top: 0px;
+}
+
+/* Define styles for the body2 section */
+.body2 {
+    height: 1500vh;
+    margin-top: 10px;
+    background: rgb(24, 24, 24);
+}
+
+/* Define styles for the container */
+.container {
+    width: 100%;
+    height: 100vh;
+    z-index: 4;
+    position: fixed;
+}
+
+/* Define styles for hotspot container */
+#hotspot-container {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+
+/* Define styles for hotspot buttons */
+.hotspot-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.hotspot-btn.active {
+    background-color: #e74c3c;
+    color: #fff;
+
+}
+
+.hotspot-btn.active:hover {
+    background-color: #9d291c;
+    color: #fff;
+
+}
+
+
+.hotspot-btn:hover {
+    background-color: #14405e;
+    transform: scale(1.05);
+}
+
+/* Define styles for the body-hotspot container */
+#body-hotspot {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    inset: 15px auto auto 23px;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+#bodyImg {
+    height: 80vh;
+    width: 15vw;
+}
+
+#svgBody {
+    height: 80vh;
+    width: 19vw;
+}
+
+/* Define styles for the first ellipse within #body-hotspot */
+#body-hotspot .hotspot ellipse:first-child {
+    fill: rgb(255, 255, 255);
+    stroke: rgb(208, 25, 31);
+    stroke-width: 4;
+    animation: pulse 1000ms ease infinite;
+}
+
+
+@media only screen and (max-width: 1440px) {
+
+    .image-container {
+        width: 80vw;
+    }
+
+    #bodyImg {
+        height: 500px;
+        width: 214px;
+    }
+
+    #svgBody {
+        height: 500px;
+        width: 214px;
+
+    }
+
+    #body-hotspot {
+
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        height: 100vh;
+
+    }
+
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+    /*Tablets [601px -> 1200px]*/
+
+
+    #bodyImg {
+        height: 500px;
+        width: 224px;
+    }
+
+    #svgBody {
+        height: 500px;
+        width: 224px;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    /*Big smartphones [426px -> 600px]*/
+
+    .image-container {
+        display: none;
+    }
+
+    #bodyImg {
+        height: 486px;
+        width: 223px;
+    }
+
+    #svgBody {
+        height: 486px;
+        width: 223px;
+    }
+
+
+}
+@media only screen and (max-width: 509px) {
+    .image-container {
+        display: none;
+    }
+
+    #bodyImg {
+        height: 424px;
+        width: 186px;
+    }
+
+    #svgBody {
+        height: 420px;
+        width: 194px;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    /*Small smartphones [325px -> 425px]*/
+
+    .image-container {
+        display: none;
+    }
+
+
+
+    #bodyImg {
+        height: 435px;
+        width: 181px;
+
+    }
+
+    #svgBody {
+        height: 435px;
+        width: 201px;
+
+    }
+}
+
+/* Define keyframes for pulse animation */
+@keyframes pulse {
+    0% {
+        stroke-opacity: 1;
+        stroke-width: 4;
+    }
+
+    50% {
+        stroke-opacity: 0;
+        stroke-width: 2;
+    }
+
+    100% {
+        stroke-opacity: 1;
+        stroke-width: 4;
+    }
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Body</title>
+    <!-- <link href="/dist/output.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+    <section>
+        <div class="image-container">
+            <img class="image1" src="./Images/shard-2.png" alt="Image 1">
+            <img class="image2" src="./Images/shard-11.png" alt="Image 2">
+            <img class="image3" src="./Images/shard-16.png" alt="Image 3">
+        </div>
+        <div class="body2">
+            <div class="container">
+                <div id="hotspot-container">
+                    <button class="hotspot-btn active" data-target="retina">Retina</button>
+                    <button class="hotspot-btn" data-target="teeth">Teeth</button>
+                    <button class="hotspot-btn" data-target="thyroid">Thyroid</button>
+                    <button class="hotspot-btn" data-target="heart">Heart</button>
+                    <button class="hotspot-btn" data-target="blood-vessels">Blood Vessels</button>
+                    <button class="hotspot-btn" data-target="kidneys">Kidneys</button>
+                    <button class="hotspot-btn" data-target="skin">Skin</button>
+                    <button class="hotspot-btn" data-target="bone-marrow">Bone Marrow</button>
+                    <button class="hotspot-btn" data-target="muscles">Muscles</button>
+                    <button class="hotspot-btn" data-target="bones">Bones</button>
+                    <button class="hotspot-btn" data-target="joints">Joints</button>
+                    <button class="hotspot-btn" data-target="nervs">Peripheral Nerves</button>
+                </div>
+
+
+
+                <div id="body-hotspot" style="position: relative;">
+                    
+                    <image id="bodyImg" preserveAspectRatio="none" style="position: absolute;" src="./Images/body.png" />
+                    <svg id="svgBody" style="isolation: isolate; position: absolute;" viewbox="0 0 280 643">
+
+
+                        <ellipse cx="151" cy="39" fill="#3498db" rx="16" ry="16" vector-effect="non-scaling-stroke"
+                            data-target="retina">
+                        </ellipse>
+                        <g class="hotspot" id="retina">
+                            <ellipse cx="151" cy="39" fill="rgb(255,255,255)" rx="24" ry="23" stroke="rgb(208,25,31)"
+                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-width="3.9"
+                                vector-effect="non-scaling-stroke"></ellipse>
+                            <ellipse cx="151" cy="39" fill="rgb(208,25,31)" rx="16" ry="16"
+                                vector-effect="non-scaling-stroke">
+                            </ellipse>
+                        </g>
+
+
+
+                        <ellipse cx="138" cy="71" fill="#3498db" rx="16" ry="16" vector-effect="non-scaling-stroke"
+                            data-target="teeth">
+                        </ellipse>
+                        <g class="hotspot" id="teeth" style="display: none;">
+                            <ellipse cx="138" cy="71" fill="rgb(255,255,255)" rx="24" ry="23" stroke="rgb(208,25,31)"
+                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-width="3.9"
+                                vector-effect="non-scaling-stroke">
+                            </ellipse>
+                            <ellipse cx="138" cy="71" fill="rgb(208,25,31)" rx="16" ry="16"
+                                vector-effect="non-scaling-stroke">
+                            </ellipse>
+                        </g>
+
+
+
+                        <ellipse cx="138" cy="106" fill="#3498db" rx="16" ry="16" vector-effect="non-scaling-stroke"
+                            data-target="thyroid">
+                        </ellipse>
+                        <g class="hotspot" id="thyroid" style="display: none;">
+                            <ellipse cx="138" cy="106" fill="rgb(255,255,255)" rx="24" ry="23" stroke="rgb(208,25,31)"
+                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-width="3.9"
+                                vector-effect="non-scaling-stroke">
+                            </ellipse>
+                            <ellipse cx="138" cy="106" fill="rgb(208,25,31)" rx="16" ry="16"
+                                vector-effect="non-scaling-stroke">
+                            </ellipse>
+                        </g>
+
+
+                        <ellipse cx="160" cy="151" fill="#3498db" rx="16" ry="16" vector-effect="non-scaling-stroke"
+                            data-target="heart">
+                        </ellipse>
+                        <g class="hotspot" id="heart" style="display: none;">
+                            <ellipse cx="160" cy="151" fill="rgb(255,255,255)" rx="24" ry="23" stroke="rgb(208,25,31)"
+                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-width="3.9"
+                                vector-effect="non-scaling-stroke"></ellipse>
+                            <ellipse cx="160" cy="151" fill="rgb(208,25,31)" rx="16" ry="16"
+                                vector-effect="non-scaling-stroke">
+                            </ellipse>
+                        </g>
+
+
+
+                        <ellipse cx="52" cy="221" fill="#3498db" rx="16" ry="16" vector-effect="non-scaling-stroke"
+                            data-target="blood-vessels">
+                        </ellipse>
+                        <g class="hotspot" id="blood-vessels" style="display: none;">
+                            <ellipse cx="52" cy="221" fill="rgb(255,255,255)" rx="23.426999999999996" ry="23"
+                                stroke="rgb(208,25,31)" stroke-linecap="butt" stroke-linejoin="miter"
+                                stroke-miterlimit="4" stroke-width="3.9" vector-effect="non-scaling-stroke">
+                            </ellipse>
+                            <ellipse cx="52" cy="221" fill="rgb(208,25,31)" rx="16" ry="16"
+                                vector-effect="non-scaling-stroke">
+                            </ellipse>
+                        </g>
+
+
+
+                        <ellipse cx="173" cy="235" fill="#3498db" rx="16" ry="16" vector-effect="non-scaling-stroke"
+                            data-target="kidneys">
+                        </ellipse>
+                        <g class="hotspot" id="kidneys" style="display: none;">
+                            <ellipse cx="173" cy="235" fill="rgb(255,255,255)" rx="24" ry="23" stroke="rgb(208,25,31)"
+                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-width="3.9"
+                                vector-effect="non-scaling-stroke">
+                            </ellipse>
+                            <ellipse cx="173" cy="235" fill="rgb(208,25,31)" rx="16" ry="16"
+                                vector-effect="non-scaling-stroke">
+                            </ellipse>
+                        </g>
+
+
+                        <ellipse cx="253" cy="315" fill="#3498db" rx="16" ry="16" vector-effect="non-scaling-stroke"
+                            data-target="skin">
+                        </ellipse>
+                        <g class="hotspot" id="skin" style="display: none;">
+                            <ellipse cx="253" cy="315" fill="rgb(255,255,255)" rx="23" ry="23" stroke="rgb(208,25,31)"
+                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-width="3.9"
+                                vector-effect="non-scaling-stroke"></ellipse>
+                            <ellipse cx="253" cy="315" fill="rgb(208,25,31)" rx="16" ry="16"
+                                vector-effect="non-scaling-stroke">
+                            </ellipse>
+                        </g>
+
+
+
+
+                        <ellipse cx="101.5" cy="380" fill="#3498db" rx="16" ry="16" vector-effect="non-scaling-stroke"
+                            data-target="bone-marrow">
+                        </ellipse>
+                        <g class="hotspot" id="bone-marrow" style="display: none;">
+                            <ellipse cx="101.5" cy="380" fill="rgb(255,255,255)" rx="24" ry="23" stroke="rgb(208,25,31)"
+                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-width="3.9"
+                                vector-effect="non-scaling-stroke"></ellipse>
+                            <ellipse cx="101.5" cy="380" fill="rgb(208,25,31)" rx="16" ry="16"
+                                vector-effect="non-scaling-stroke">
+                            </ellipse>
+                        </g>
+
+
+
+                        <ellipse cx="190" cy="417" fill="#3498db" rx="16" ry="16" vector-effect="non-scaling-stroke"
+                            data-target="muscles">
+                        </ellipse>
+                        <g class="hotspot" id="muscles" style="display: none;">
+                            <ellipse cx="190" cy="417" fill="rgb(255,255,255)" rx="24" ry="23" stroke="rgb(208,25,31)"
+                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-width="3.9"
+                                vector-effect="non-scaling-stroke">
+                            </ellipse>
+                            <ellipse cx="190" cy="417" fill="rgb(208,25,31)" rx="16" ry="16"
+                                vector-effect="non-scaling-stroke">
+                            </ellipse>
+                        </g>
+
+
+
+
+                        <ellipse cx="104.5" cy="425" fill="#3498db" rx="16" ry="16" vector-effect="non-scaling-stroke"
+                            data-target="bones">
+                        </ellipse>
+                        <g class="hotspot" id="bones" style="display: none;">
+                            <ellipse cx="104.5" cy="425" fill="rgb(255,255,255)" rx="23" ry="23" stroke="rgb(208,25,31)"
+                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-width="3.9"
+                                vector-effect="non-scaling-stroke"></ellipse>
+                            <ellipse cx="104.5" cy="425" fill="rgb(208,25,31)" rx="16" ry="16"
+                                vector-effect="non-scaling-stroke">
+                            </ellipse>
+                        </g>
+
+
+
+
+                        <ellipse cx="106.5" cy="471.5" fill="#3498db" rx="16" ry="16" vector-effect="non-scaling-stroke"
+                            data-target="joints">
+                        </ellipse>
+                        <g class="hotspot" id="joints" style="display: none;">
+                            <ellipse cx="106.5" cy="471.5" fill="rgb(255,255,255)" rx="23" ry="23"
+                                stroke="rgb(208,25,31)" stroke-linecap="butt" stroke-linejoin="miter"
+                                stroke-miterlimit="4" stroke-width="3.9" vector-effect="non-scaling-stroke"></ellipse>
+                            <ellipse cx="106.5" cy="471.5" fill="rgb(208,25,31)" rx="16" ry="16"
+                                vector-effect="non-scaling-stroke">
+                            </ellipse>
+                        </g>
+
+
+
+
+                        <ellipse cx="175" cy="619.5" fill="#3498db" rx="16" ry="16" vector-effect="non-scaling-stroke"
+                            data-target="nervs">
+                        </ellipse>
+                        <g class="hotspot" id="nervs" style="display: none;">
+                            <ellipse cx="175" cy="619" fill="rgb(255,255,255)" rx="23" ry="23" stroke="rgb(208,25,31)"
+                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" stroke-width="3.9"
+                                vector-effect="non-scaling-stroke"></ellipse>
+                            <ellipse cx="175" cy="619" fill="rgb(208,25,31)" rx="16" ry="16"
+                                vector-effect="non-scaling-stroke">
+                            </ellipse>
+                        </g>
+
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+        integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
